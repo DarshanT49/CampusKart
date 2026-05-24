@@ -26,9 +26,8 @@ public class HomeController {
     @Autowired
     private CollegeRepo collegeRepo;
 
-    @RequestMapping("/home")
-    @RequestMapping("/")
-    public ModelAndView homePage() {
+    @RequestMapping("/","/home")
+        public ModelAndView homePage() {
 
         ModelAndView mv = new ModelAndView();
 
