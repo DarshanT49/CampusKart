@@ -27,6 +27,7 @@ public class HomeController {
     private CollegeRepo collegeRepo;
 
     @RequestMapping("/home")
+    @RequestMapping("/")
     public ModelAndView homePage() {
 
         ModelAndView mv = new ModelAndView();
